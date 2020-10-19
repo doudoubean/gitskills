@@ -30,18 +30,6 @@ Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                bat 'set'
-            }
-        }
-    }
-}
-
-Jenkinsfile (Declarative Pipeline)
-pipeline {
-    agent any
-    stages {
         stage('Deploy') {
             steps {
                 retry(3) {
